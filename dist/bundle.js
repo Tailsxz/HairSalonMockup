@@ -15,7 +15,7 @@
   \*****************/
 /***/ (() => {
 
-eval("\n\n//# sourceURL=webpack://nailsalonmockup/./main.js?");
+eval("var sayHello = function sayHello(name) {\n  return console.log(\"Hello, \".concat(name, \"! How are you today?\"));\n};\nsayHello('Tai');\n\n//# sourceURL=webpack://nailsalonmockup/./main.js?");
 
 /***/ })
 
