@@ -106,10 +106,11 @@
       <form action="/contact" method="POST">
         <fieldset>
           <legend>Send us a message!</legend>
-          <label for="#fullName"></label>
+          <label for="fullName">Full Name <span>(required*)</span></label>
           <input id="fullName"type="text">
-          <label for="#email"></label>
+          <label for="email">Email <span>(required*)</span></label>
           <input id="email"type="email">
+          <label for="message">Message <span>(required*)</span></label>
           <textarea name="message" id="message" cols="30" rows="10"></textarea>
         </fieldset>
       </form>
@@ -117,7 +118,29 @@
   </main>
   <footer>
     <div class="container">
-
+      <p>© Sleek Nails Designed by Tai Phan</p>
+      <ul class="contact_info">
+        <li>
+          <a href="tel:333-333-3333">
+            <h2>Phone</h2>
+            <span class="contact-link">333-333-3333</span>
+          </a>
+        </li>
+        <li>
+          <a href="mailto:email@example.com">
+            <h2>Email</h2>
+            <span class="contact-link">email@example.com</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.google.com/maps/place/U+Nails+Salon/@41.994784,-87.8054629,17z/data=!3m1!4b1!4m6!3m5!1s0x880fc96c5046b4d9:0x945f70246696b264!8m2!3d41.99478!4d-87.802888!16s%2Fg%2F1tgp1dd_?entry=ttu">234 S. Lorem St.</a>
+        </li>
+      </ul>
+      <ul class="social-links">
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
     </div>
   </footer>
   <script src="dist/bundle.js"></script>
