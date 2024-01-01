@@ -1,0 +1,8 @@
+/* Custom Properties */
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  background-image: url(../src/mainbg.jpg);
+}
