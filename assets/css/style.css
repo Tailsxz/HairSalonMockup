@@ -1,9 +1,17 @@
-/* Custom Properties */
 :root {
+  /* Default rem unit */
   font-size: 62.5%;
+
+  /* Color Custom Properties */
   --color-neutral-400: #FCE4EC;
   --color-primary-400: #93032E;
   --bg: var(--color-neutral-400);
+
+  /* Utility Custom Properties */
+  --fs-small: 2rem;
+  --fs-medium: 3rem;
+  --fs-large: 4rem;
+  --fs-xlarge: 6rem;
 }
 
 /* Default Styles */
@@ -37,7 +45,7 @@ header {
   position: sticky;
   top: 0;
   background: var(--color-primary-400);
-  font-size: 2rem;
+  font-size: var(--fs-small);
   box-shadow: 5px 0px 20px -15px rgba(0, 0, 0, .7);
 }
 
@@ -95,5 +103,27 @@ nav {
   background-repeat: no-repeat;
   background-position: center right 10%;
   background-size: cover;
-  padding-block: calc((100svh - 55.47px) / 2);
+  height: calc(100svh - 55.47px);
+  padding-inline-start: 15rem;
+  position: relative;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  background: linear-gradient(to right, rgba(255, 255, 255, .2), rgba(255, 255, 255, .1));
+  inset: 0;
+  z-index: -1;
+}
+
+.hero h1 {
+  font-size: var(--fs-large);
+  width: 50%;
+}
+
+.hero p {
+  font-size: var(--fs-medium);
+  width: 45ch;
 }
