@@ -20,6 +20,7 @@ body {
   padding: 0;
   background: var(--bg);
   font-family: 'Playfair Display', Arial, sans-serif;
+  box-sizing: border-box;
 }
 
 ul {
@@ -47,6 +48,7 @@ header {
   background: var(--color-primary-400);
   font-size: var(--fs-small);
   box-shadow: 5px 0px 20px -15px rgba(0, 0, 0, .7);
+  z-index: 1;
 }
 
 nav {
@@ -93,6 +95,7 @@ nav {
 @media screen and (max-width: 47em) {
   .navBar {
     opacity: 0;
+    overflow: hidden;
   }
 }
 
@@ -101,13 +104,18 @@ nav {
 .hero {
   background-image: url(../src/mainBgAlt.jpg);
   background-repeat: no-repeat;
-  background-position: center right 10%;
+  background-position: center right 20%;
   background-size: cover;
-  height: calc(100svh - 55.47px);
-  padding-inline-start: 15rem;
+  display: flex;
+  align-items: center;
+  height: 100svh;
   position: relative;
   overflow: hidden;
-  z-index: -1;
+  isolation: isolate;
+}
+
+.hero .container {
+  padding-inline-start: 50%;
 }
 
 .hero::before {
@@ -118,12 +126,13 @@ nav {
   z-index: -1;
 }
 
+
 .hero h1 {
   font-size: var(--fs-large);
-  width: 50%;
+  width: min(70%, 45ch);
 }
 
 .hero p {
   font-size: var(--fs-medium);
-  width: 45ch;
+  width: min(70%, 45ch);
 }
