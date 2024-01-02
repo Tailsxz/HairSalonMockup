@@ -1,9 +1,9 @@
 # Project Title
-Title
+Sleek Nails
 
 [Live Site](https://takingcareofme.netlify.app) Demo Link
 
-Goal of the project, what is the purpose of it
+Nail Salon website acting as a demo for potential clients.
 
 ## Getting Started
 
