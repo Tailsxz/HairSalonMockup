@@ -1,13 +1,16 @@
 /* Custom Properties */
 :root {
   font-size: 62.5%;
-  background: #FCE4EC;
+  --color-neutral-400: #FCE4EC;
+  --color-primary-400: #E6C229;
+  --bg: var(--color-neutral-400);
 }
 
-/* Default styles */
+/* Default Styles */
 body {
   margin: 0;
   padding: 0;
+  background: var(--bg);
   font-family: 'Playfair Display', Arial, sans-serif;
 }
 
@@ -22,11 +25,58 @@ a {
   text-decoration: none;
 }
 
-/* Default container */
+/* Default Container */
 .container {
   width: min(100% - 2rem, 1400px);
   margin-inline: auto;
 }
+
+/* Navigation */
+header {
+  height: fit-content;
+  position: sticky;
+  top: 0;
+  background: var(--color-primary-400);
+  font-size: 2rem;
+  box-shadow: 5px 0px 20px -15px rgba(0, 0, 0, .7);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  /* border: 2px solid black; */
+  padding: 1.5rem;
+}
+
+.navBar {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.navBar a {
+  position: relative;
+}
+
+.navBar a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 1px;
+  background: currentColor;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 225ms ease-in;
+}
+
+.navBar a:hover::after {
+  transform: scaleX(1);
+  transform-origin: left; 
+}
+
+/* Hero Styling */
 
 .hero {
   background-image: url(../src/mainBgAlt.jpg);
