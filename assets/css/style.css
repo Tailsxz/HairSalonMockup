@@ -237,3 +237,14 @@ nav {
   background-size: cover;
   background-position: center;
 }
+
+/* About Styling */ 
+
+.about {
+  background-color: #fff;
+  margin-block: 11rem;
+}
+
+.about .container {
+  padding: 5rem;
+}
