@@ -23,4 +23,4 @@ To get a copy of this project, you can fork the repo then clone it as your own.
 Any planned future optimizations
 
 ### Knowledge gained from this project
-Skills/knowledge gained from the project
+Learned how to draw inspiration from other designs. Also learned what the structure of an HTML document should look like for a standard business website.

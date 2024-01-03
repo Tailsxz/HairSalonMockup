@@ -48,6 +48,10 @@ h2 {
   font-size: var(--fs-large);
 }
 
+h3 {
+  font-size: var(--fs-medium);
+}
+
 /* Default Container */
 .container {
   width: min(100% - 2rem, 1400px);
@@ -175,7 +179,7 @@ nav {
 /* Features Styling */
 
 .features {
-  margin-block: 11rem;
+  margin-block: 8rem;
   text-align: center;
 }
 
@@ -185,17 +189,13 @@ nav {
   gap: 1.5rem;
 }
 
-.features h3 {
-  font-size: var(--fs-medium);
-}
-
 .feature {
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
   flex-basis: 300px;
   background-color: #fff;
-  box-shadow: 0 1rem 2rem -1rem rgb(0 0 0 / .1);
+  box-shadow: 0 1rem 2rem -1rem rgb(0 0 0 / .2);
   border-radius: 10px;
   color: var(--color-primary-400);
   padding: 1rem;
@@ -246,7 +246,7 @@ nav {
 
 .about {
   background-color: #fff;
-  margin-block: 11rem;
+  margin-block: 8rem;
 }
 
 .about h2 {
