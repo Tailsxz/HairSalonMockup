@@ -23,4 +23,6 @@ To get a copy of this project, you can fork the repo then clone it as your own.
 Any planned future optimizations
 
 ### Knowledge gained from this project
-Learned how to draw inspiration from other designs. Also learned what the structure of an HTML document should look like for a standard business website.
+Learned how to draw inspiration from other designs. Also learned what the structure of an HTML document should look like for a standard business website. 
+Learned the semantics behind using fieldsets and legends, and how to ensure that forms are up to WAI-ARIA standards.
+Figured out a way to use the ::before pseudo element when using background images to make text more legible.
