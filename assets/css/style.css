@@ -2,6 +2,7 @@
   /* Color Custom Properties */
   --color-neutral-400: #FCE4EC;
   --color-primary-400: #93032E;
+  --color-primary-300: #fff175c0;
   --bg: var(--color-neutral-400);
 
   /* Utility Custom Properties */
@@ -116,7 +117,7 @@ nav {
 }
 
 .hero .container {
-  padding-inline-start: 60%;
+  margin-inline-start: 60%;
 }
 
 .hero::before {
@@ -129,11 +130,110 @@ nav {
 
 
 .hero h1 {
-  font-size: var(--fs-large);
-  width: min(70%, 45ch);
+  font-size: var(--fs-xlarge);
+  width: min(80%, 30ch);
 }
 
 .hero p {
+  font-size: var(--fs-small);
+  width: min(80%, 30ch);
+}
+
+@media screen and (max-width: 47em) {
+  .hero .container {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    flex-flow: column nowrap;
+    margin-inline: auto;
+    text-align: center;
+  }
+  .hero h1 {
+    font-size: var(--fs-large);
+    width: min(80%, 30ch);
+  }
+  
+  .hero p {
+    font-size: var(--fs-xsmall);
+    width: min(80%, 30ch);
+  }
+}
+
+/* Features Styling */
+
+.features {
+  margin-block: 11rem;
+}
+
+.features .container {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.features h2{
+  font-size: var(--fs-large);
+  text-align: center;
+}
+
+.features h3 {
   font-size: var(--fs-medium);
-  width: min(70%, 45ch);
+}
+
+.feature {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  text-align: center;
+  flex-basis: 300px;
+  background-color: #fff;
+  box-shadow: 0 1rem 2rem -1rem rgb(0 0 0 / .1);
+  border-radius: 10px;
+  color: var(--color-primary-400);
+  padding: 1rem;
+}
+
+.feature * {
+  margin-block: 1rem;
+}
+
+.feature h3 {
+  margin-bottom: .25rem;
+}
+
+.feature img {
+  opacity: 0;
+}
+
+.feature p {
+  font-size: var(--fs-small);
+}
+
+.wrapper-img {
+  width: 8rem;
+  height: 8rem;
+  position: relative;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.mani {
+  background-image: url(/assets/src/giorgio-trovato-gb6gtiTZKB8-unsplash.jpg);
+  background-repeat: norepeat;
+  background-size: cover;
+  background-position: center right -50px;
+}
+
+.pedi {
+  background-image: url(/assets/src/rune-enstad-qeuJczNo54w-unsplash.jpg);
+  background-repeat: norepeat;
+  background-size: cover;
+  background-position: left;
+}
+
+.special {
+  background-image: url(/assets/src/chelson-tamares-vtQHwU4F13s-unsplash.jpg);
+  background-repeat: norepeat;
+  background-size: cover;
+  background-position: center;
 }
