@@ -352,7 +352,3 @@ caption {
   text-transform: uppercase;
   font-size: var(--fs-smedium);
 }
-
-.services button {
-  flex-wrap: wrap;
-}
