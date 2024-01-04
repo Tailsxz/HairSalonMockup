@@ -306,16 +306,20 @@ nav {
 
 /* Services Styling */ 
 .services .container {
+  width: 80%;
   display: flex;
+  justify-content: space-between;
+  gap: 4rem;
 }
 
-.service {
-  margin-left: 4rem;
+.service th:first-child {
+  width: 80%;
 }
 
 .services h2 {
   text-align: center;
 }
+
 
 .service,
 .service tr:first-child {
@@ -333,8 +337,15 @@ td {
   font-size: var(--fs-smedium);
 }
 
-th {
-  padding-block: 1rem;
+td[data-cell="service"],
+td[data-cell="price"] {
+  font-size: var(--fs-small);
+  font-weight: 700;
+}
+
+td[data-cell="description"],
+td[data-cell="description-last"] {
+  font-size: var(--fs-xsmall);
 }
 
 td[data-cell="description"]::after {
@@ -346,6 +357,7 @@ td[data-cell="description"]::after {
 }
 
 caption {
+  width: fit-content;
   text-align: left;
   font-weight: 700;
   text-transform: uppercase;
