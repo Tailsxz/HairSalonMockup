@@ -242,6 +242,10 @@ nav {
   background-position: center;
 }
 
+@media screen and (max-width: 47em) {
+
+}
+
 /* About Styling */ 
 
 .about {
@@ -250,19 +254,41 @@ nav {
 }
 
 .about h2 {
-  margin-block: 2rem;
+  margin-block: 0 2rem;
 }
 
 .about .container {
-  padding: 5rem;
+  flex-basis: 50%;
+  padding-block: 5rem;
   display: flex;
-  gap: 5rem;
+  gap: 3rem;
 }
 
 .about p {
-  width: 45ch;
+  width: min(100% - 2rem, 45ch);
 }
 
 .about img {
+  align-self: center;
+  margin-inline-start: 10px;
+  width: min(50% - 2rem, 600px);
   box-shadow: -10px 10px 0px 0px var(--color-primary-400);
+}
+
+@media screen and (max-width: 47em) {
+  .about .container {
+    display: block;
+    text-align: center;
+  }
+
+  .about p {
+    margin-inline: auto;
+  }
+
+  .about img {
+    width: 100%;
+    margin: 0 0 2rem 0;
+    box-shadow: 0px 20px 0px -10px var(--color-primary-400);
+  }
+
 }
