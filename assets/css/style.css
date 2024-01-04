@@ -265,7 +265,7 @@ nav {
 .about .container {
   padding-block: 5rem;
   display: flex;
-  gap: 11rem;
+  gap: 3rem;
 }
 
 .about p {
