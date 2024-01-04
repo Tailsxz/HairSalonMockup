@@ -370,7 +370,11 @@ caption {
 
 @media screen and (max-width: 47em) {
   .services .container {
+    width: calc(100% - 2rem);
     flex-direction: column;
+  }
+  table {
+    margin-inline: auto;
   }
 }
 
