@@ -259,13 +259,13 @@ nav {
 
 .about h2 {
   margin-block: 0 2rem;
+  width: fit-content;
 }
 
 .about .container {
-  flex-basis: 50%;
   padding-block: 5rem;
   display: flex;
-  gap: 3rem;
+  gap: 11rem;
 }
 
 .about p {
