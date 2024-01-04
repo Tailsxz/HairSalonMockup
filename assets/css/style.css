@@ -244,9 +244,12 @@ nav {
 
 @media screen and (max-width: 47em) {
   .features .container{
-    width: 60%;
     flex-direction: column;
     align-items: center;
+  }
+  
+  .feature {
+    width: min(100% - 2rem, 350px);
   }
 }
 
@@ -266,6 +269,11 @@ nav {
   padding-block: 5rem;
   display: flex;
   gap: 3rem;
+}
+
+.wrapper-content {
+  flex-basis: 50%;
+  margin-left: auto;
 }
 
 .about p {
