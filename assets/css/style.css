@@ -307,15 +307,14 @@ nav {
 /* Services Styling */ 
 .services .container {
   display: flex;
-  gap: 2rem;
+}
+
+.service {
+  margin-left: 4rem;
 }
 
 .services h2 {
   text-align: center;
-}
-
-.services table {
-  flex-basis: 40%;
 }
 
 .service,
@@ -357,4 +356,10 @@ caption {
   .services .container {
     flex-direction: column;
   }
+}
+
+/* Contact Styling */
+
+.contact form {
+  border: none;
 }
