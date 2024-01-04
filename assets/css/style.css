@@ -305,27 +305,45 @@ nav {
 }
 
 /* Services Styling */ 
+.services .container {
+  display: flex;
+  gap: 2rem;
+}
+
+.services h2 {
+  text-align: center;
+}
+
+.services table {
+  flex-basis: 40%;
+}
 
 .service,
 .service tr:first-child {
-  width: 100%;
   border-collapse: collapse;
-  color: var(--color-neutral-400);
-  background: var(--color-primary-400);
+  text-align: left;
+  /* color: var(--color-neutral-400);
+  background: var(--color-primary-400); */
 }
 
 caption,
 th,
 td {
-  padding: 1rem;
+  padding-block-end: .5rem;
+  color: var(--color-primary-400);
+  font-size: var(--fs-smedium);
 }
 
-td {
-  background: #d1174f;
+th {
+  padding-block: 1rem;
 }
 
-tr:nth-of-type(2n) td {
-  background: hsl(342 80% 45% / .9);
+td[data-cell="description"]::after {
+  margin-block-start: 1rem;
+  display: block;
+  content: '';
+  width: 90%;
+  border-bottom: 5px dotted rgb(0 0 0 / .2);
 }
 
 caption {
@@ -333,5 +351,8 @@ caption {
   font-weight: 700;
   text-transform: uppercase;
   font-size: var(--fs-smedium);
-  color: var(--color-primary-400);
+}
+
+.services button {
+  flex-wrap: wrap;
 }
