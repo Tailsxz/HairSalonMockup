@@ -213,14 +213,14 @@
     </section>
     <section class="contact">
       <div class="container">
-        <h2>Booking an appointment or have questions? Contact us here!</h2>
+        <h2>Contact Us</h2>
         <form action="/contact" method="POST">
           <fieldset>
-            <legend>Send us a message!</legend>
+            <legend>Have questions or want to book an appointment? Send us a message!</legend>
             <label for="fullName">Full Name <span>(required*)</span></label>
-            <input id="fullName" type="text" required>
+            <input name="fullname" id="fullName" type="text" required>
             <label for="email">Email <span>(required*)</span></label>
-            <input id="email" type="email" required>
+            <input name="email" id="email" type="email" required>
             <label for="message">Message <span>(required*)</span></label>
             <textarea name="message" id="message" cols="30" rows="10"></textarea>
             <button class="button button_submit">

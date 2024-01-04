@@ -389,9 +389,23 @@ caption {
 }
 
 .contact h2 {
+  text-align: center;
   padding-block-start: 8rem;
 }
 
+.contact legend {
+  text-align: center;
+  font-size: var(--fs-medium);
+  padding-block-end: 2rem;
+}
+
 .contact fieldset {
+  width: 50%;
   border: none;
+  margin-inline: auto;
+}
+
+input,
+textarea {
+  display: block;
 }
