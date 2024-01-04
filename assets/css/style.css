@@ -52,6 +52,13 @@ h3 {
   font-size: var(--fs-medium);
 }
 
+.services,
+.features,
+.contact,
+.about {
+  margin-block: 8rem;
+}
+
 /* Default Container */
 .container {
   width: min(100% - 2rem, 1400px);
@@ -179,7 +186,6 @@ nav {
 /* Features Styling */
 
 .features {
-  margin-block: 8rem;
   text-align: center;
 }
 
@@ -257,7 +263,6 @@ nav {
 
 .about {
   background-color: #fff;
-  margin-block: 8rem;
 }
 
 .about h2 {
@@ -379,7 +384,14 @@ caption {
 }
 
 /* Contact Styling */
+.contact {
+  background: #fff;
+}
 
-.contact form {
+.contact h2 {
+  padding-block-start: 8rem;
+}
+
+.contact fieldset {
   border: none;
 }
