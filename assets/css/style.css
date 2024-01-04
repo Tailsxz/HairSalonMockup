@@ -320,7 +320,6 @@ nav {
   text-align: center;
 }
 
-
 .service,
 .service tr:first-child {
   border-collapse: collapse;
@@ -341,6 +340,11 @@ td[data-cell="service"],
 td[data-cell="price"] {
   font-size: var(--fs-small);
   font-weight: 700;
+}
+
+th[data-cell="price"],
+td[data-cell="price"] {
+  text-align: right;
 }
 
 td[data-cell="description"],
