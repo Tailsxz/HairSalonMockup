@@ -352,3 +352,9 @@ caption {
   text-transform: uppercase;
   font-size: var(--fs-smedium);
 }
+
+@media screen and (max-width: 47em) {
+  .services .container {
+    flex-direction: column;
+  }
+}
