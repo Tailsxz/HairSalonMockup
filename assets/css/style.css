@@ -302,5 +302,14 @@ nav {
     margin: 0 0 2rem 0;
     box-shadow: 0px 20px 0px -10px var(--color-primary-400);
   }
-
 }
+
+/* Services Styling */ 
+
+.service {
+  background: white;
+}
+
+/* caption {
+  text-align: left;
+} */
