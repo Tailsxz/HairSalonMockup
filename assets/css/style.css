@@ -454,7 +454,7 @@ input {
 /* Footer Styling */
 
 footer .container {
-  gap: 5rem;
+  gap: 4rem;
   width: min(100% - 2rem, 1000px);
   display: flex;
   padding-block: 2rem;
@@ -479,7 +479,7 @@ footer li {
 /* Socials */
 
 .social-links {
-  gap: 1rem;
+  gap: 0.5rem;
   /* margin-inline-end: 5rem; */
   display: flex;
 }
