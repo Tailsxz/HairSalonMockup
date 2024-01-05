@@ -440,11 +440,19 @@ textarea {
   min-height: 8rem;
 }
 
+input {
+  padding: .5rem .5rem;
+}
+
 .button_submit {
   margin-inline: 2rem;
 }
 
 /* Footer Styling */
+
+footer .container {
+  display: flex;
+}
 
 /* Socials */
 
@@ -452,7 +460,7 @@ textarea {
   width: 30px;
 }
 
-:has(:target) {
+.navBar :has(:target) {
   scroll-behavior: smooth;
   scroll-padding-top: 6rem;
 } 
