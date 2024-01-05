@@ -48,6 +48,8 @@ a {
 
 p {
   font-size: var(--fs-small);
+  margin: 0;
+  padding: 0;
 }
 
 h1,
@@ -399,6 +401,7 @@ caption {
 .contact {
   background: #fff;
   padding-block-end: 8rem;
+  margin-block-end: 0;
 }
 
 .contact fieldset {
@@ -452,9 +455,29 @@ input {
 
 footer .container {
   display: flex;
+  padding-block: 2rem;
+  justify-content: space-between;
 }
 
+.copyright {
+  align-self: center;
+}
+
+footer li {
+  padding-block: .5rem;
+}
+
+.contact_info-title {
+  display: block;
+  font-weight: bold;
+}
 /* Socials */
+
+.social-links {
+  gap: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
 
 .social-links img{
   width: 30px;
