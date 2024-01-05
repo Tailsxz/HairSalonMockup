@@ -454,9 +454,10 @@ input {
 /* Footer Styling */
 
 footer .container {
+  gap: 5rem;
+  width: min(100% - 2rem, 1000px);
   display: flex;
   padding-block: 2rem;
-  justify-content: space-between;
 }
 
 .copyright {
@@ -471,19 +472,54 @@ footer li {
   display: block;
   font-weight: bold;
 }
+
+.hours {
+  flex-shrink: 0;
+}
 /* Socials */
 
 .social-links {
   gap: 1rem;
+  /* margin-inline-end: 5rem; */
   display: flex;
-  justify-content: space-between;
 }
 
 .social-links img{
   width: 30px;
 }
 
-.navBar :has(:target) {
+@media screen and (max-width: 47em) {
+  footer .container {
+    display: block;
+    padding-inline-start: 2.5rem;
+  }
+  
+  .contact_info-title {
+    padding-block-start: .5rem;
+  }
+
+  .hours li {
+    padding-block: 0 .25rem;
+  }
+
+  .hours li:first-child {
+    padding: 0;
+  }
+
+  .social-links li {
+    padding-block-start: 0.25rem;
+  }
+}
+
+/* :has(:target) {
   scroll-behavior: smooth;
-  scroll-padding-top: 6rem;
-} 
+}  */
+
+/* #services {
+  scroll-padding-top: 5rem;
+}
+
+#contact {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
+} */
