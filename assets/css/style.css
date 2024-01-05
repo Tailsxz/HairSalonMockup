@@ -511,10 +511,6 @@ footer li {
   }
 }
 
-/* :has(:target) {
-  scroll-behavior: smooth;
-}  */
-
 /* #services {
   scroll-padding-top: 5rem;
 }
