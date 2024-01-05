@@ -490,8 +490,8 @@ footer li {
 
 @media screen and (max-width: 47em) {
   footer .container {
+    width: calc(100% - 5rem);
     display: block;
-    padding-inline-start: 2.5rem;
   }
   
   .contact_info-title {
