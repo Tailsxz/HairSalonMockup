@@ -451,3 +451,8 @@ textarea {
 .social-links img{
   width: 30px;
 }
+
+:has(:target) {
+  scroll-behavior: smooth;
+  scroll-padding-top: 6rem;
+} 
