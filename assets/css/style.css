@@ -412,7 +412,6 @@ caption {
 }
 
 .contact fieldset {
-  width: 50%;
   border: none;
   margin-inline: auto;
 }
@@ -420,4 +419,12 @@ caption {
 input,
 textarea {
   display: block;
+}
+
+/* Footer Styling */
+
+/* Socials */
+
+.social-links img{
+  width: 30px;
 }
