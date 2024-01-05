@@ -398,6 +398,16 @@ caption {
 /* Contact Styling */
 .contact {
   background: #fff;
+  padding-block-end: 8rem;
+}
+
+.contact fieldset {
+  border: none;
+  gap: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  width: min(100% - 2rem, 550px);
+  margin-inline: auto;
 }
 
 .contact h2 {
@@ -406,19 +416,32 @@ caption {
 }
 
 .contact legend {
-  text-align: center;
   font-size: var(--fs-medium);
   padding-block-end: 2rem;
+  text-align: center;
 }
 
-.contact fieldset {
-  border: none;
-  margin-inline: auto;
-}
-
-input,
-textarea {
+label {
   display: block;
+  padding-block: .5rem;
+}
+
+.wrapper-inputs,
+.message {
+  padding-inline: 2rem;
+}
+
+.message {
+  flex-basis: 100%;
+}
+
+textarea {
+  width: 100%;
+  min-height: 8rem;
+}
+
+.button_submit {
+  margin-inline: 2rem;
 }
 
 /* Footer Styling */
