@@ -1,3 +1,15 @@
+/* Font Faces */
+@font-face {
+  font-family: 'Playfair Display';
+  src: url(/assets/fonts/PlayfairDisplay-Regular.woff2);
+}
+
+@font-face {
+  font-family: 'Playfair Display';
+  font-weight: 700;
+  src: url(/assets/fonts/PlayfairDisplay-Bold.woff2);
+}
+
 :root {
   /* Color Custom Properties */
   --color-neutral-400: #FCE4EC;
