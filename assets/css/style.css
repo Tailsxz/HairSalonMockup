@@ -311,7 +311,7 @@ nav {
 
 /* Services Styling */ 
 .services .container {
-  width: 80%;
+  width: 60%;
   display: flex;
   justify-content: space-between;
   gap: 4rem;
