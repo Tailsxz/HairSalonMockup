@@ -18,6 +18,7 @@ function setUpObserver() {
       if (entry.isIntersecting) {
 
         const prevIntersect = document.querySelector('.active');
+        //Only removing class if there exists a current navBar link with the class active, there exists no link with the active class on initial load
         if (prevIntersect) {
           prevIntersect.classList.remove('active');
         };

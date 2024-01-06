@@ -432,6 +432,12 @@ caption {
   text-align: center;
 }
 
+textarea,
+input {
+  border-radius: 0;
+  border: 1px solid black;
+}
+
 textarea:focus-visible,
 input:focus-visible {
   outline: 2px solid var(--color-primary-400);  
