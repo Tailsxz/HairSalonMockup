@@ -468,6 +468,10 @@ footer li {
   padding-block: .5rem;
 }
 
+.contact_title {
+  padding-block: .5rem 0px;
+}
+
 .contact_info-title {
   display: block;
   font-weight: bold;
@@ -498,8 +502,9 @@ footer li {
     padding-block-start: .5rem;
   }
 
+  .contact_title li,
   .hours li {
-    padding-block: 0 .25rem;
+    padding-block: 0 0.25rem;
   }
 
   .hours li:first-child {
@@ -511,11 +516,35 @@ footer li {
   }
 }
 
-/* #services {
-  scroll-padding-top: 5rem;
+/* Button Styling */
+
+.button {
+  display: inline-block;
+  border: 2px solid var(--color-primary-400);
+  background: var(--color-primary-400);
+  color: var(--color-neutral-400);
+  font-size: var(--fs-small);
+  margin-inline-start: 2px;
+  padding: .75rem 1.5rem;
+  margin-block: 1rem;
+  cursor: pointer;
+  line-height: 1;
+  outline: 2px solid var(--color-primary-400);
+  transition: outline-offset 100ms ease-in;
 }
 
-#contact {
-  scroll-behavior: smooth;
-  scroll-padding-top: 5rem;
-} */
+.button:hover,
+.button:focus-visible {
+  outline: 2px solid var(--color-neutral-400);
+  outline-offset: -6px;
+}
+
+.button_booking {
+  display: block;
+  width: fit-content;
+  margin-inline: auto;
+}
+
+.button_submit {
+  margin-inline-start: calc(2rem + 2px);
+}
