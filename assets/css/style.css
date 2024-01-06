@@ -375,7 +375,7 @@ td[data-cell="description"]::after {
   margin-block-start: 1rem;
   display: block;
   content: '';
-  width: 90%;
+  /* width: 90%; */
   border-bottom: 5px dotted rgb(0 0 0 / .2);
 }
 
