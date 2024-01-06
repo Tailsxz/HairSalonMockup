@@ -107,8 +107,11 @@ nav {
   position: relative;
 }
 
-.navBar a:hover {
+.navBar a:hover,
+.navBar a:focus-visible {
   color: #FCE4EC;
+  outline: 2px dotted var(--color-neutral-400);
+  outline-offset: 5px;
   transition: color 200ms ease-in;
 }
 
@@ -127,9 +130,14 @@ nav {
   transition: transform 225ms ease-in;
 }
 
-.navBar a:hover::after {
+.navBar a:hover::after,
+.navBar a:focus-visible::after {
   transform: scaleX(1);
   transform-origin: left; 
+}
+
+.active {
+  color: var(--color-neutral-400);
 }
 
 @media screen and (max-width: 47em) {
@@ -490,6 +498,12 @@ footer li {
   gap: 0.5rem;
   /* margin-inline-end: 5rem; */
   display: flex;
+}
+
+.social-links li {
+  margin-block-start: .5rem;
+  outline: none;
+  padding: 0;
 }
 
 .social-links img{
