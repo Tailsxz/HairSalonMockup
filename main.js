@@ -15,17 +15,22 @@ function setUpObserver() {
 
   const changeActiveSec = (entries) => {
     entries.forEach((entry) => {
-      if (entry.isIntersecting) {
+      // const prevIntersect = document.querySelector('.active');
+      // //removes active class if the current section that was previously intersecting is no longer intersecting.
+      // if (!entry.isIntersecting && prevIntersect) {
+      //   prevIntersect.classList.remove('active');
+      // }
+      // if (entry.isIntersecting) {
 
-        const prevIntersect = document.querySelector('.active');
-        //Only removing class if there exists a current navBar link with the class active, there exists no link with the active class on initial load
-        if (prevIntersect) {
-          prevIntersect.classList.remove('active');
-        };
+      //   //Only removing class if there exists a current navBar link with the class active, there exists no link with the active class on initial load
+      //   if (prevIntersect) {
+      //     prevIntersect.classList.remove('active');
+      //   };
 
-        const id = entry.target.getAttribute('id');
-        const newActive = document.querySelector(`[href="#${id}"]`).classList.add("active");
-      }
+      //refactored!! All we need to do is set the boolean for the toggle as the entry.isIntersecting expression! Now if it is intersecting it will add the class and if not it removes it. All with a single expression addition to the toggle!
+      const id = entry.target.getAttribute('id');
+      const newActive = document.querySelector(`[href="#${id}"]`).classList.toggle("active", entry.isIntersecting);
+      // }
     })
   }
 
