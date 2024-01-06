@@ -408,7 +408,7 @@ caption {
 /* Contact Styling */
 .contact {
   background: #fff;
-  padding-block-end: 8rem;
+  padding-block-end: 8.7rem;
   margin-block-end: 0;
 }
 
@@ -575,4 +575,35 @@ footer li {
 
 .button_submit {
   margin-inline-start: calc(2rem + 2px);
+}
+
+/* Scroll Snapping */
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-block-start: 5rem;
+  /* scroll-snap-type: y proximity;*/
+}
+
+/* #home,
+#about,
+#services,
+#contact {
+  scroll-snap-align: center;
+} */
+
+#home {
+  scroll-margin-top: 100rem;
+}
+
+#services {
+  scroll-margin-top : 4rem;
+}
+
+#about {
+  scroll-margin-top: 9rem;
+}
+
+#contact {
+  scroll-margin-top: -.5rem;
 }
