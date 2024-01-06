@@ -2,7 +2,7 @@
 
 // sayHello('Tai');
 
-
+//Function to set up intersection observer to be apply to apply currently intersecting section styles to the appropriate link in the navBar.
 function setUpObserver() {
   //Adding a style element to be apply to apply the pseudo-element style as well.
   const styleElement = document.head.appendChild(document.createElement('style'));
@@ -16,14 +16,14 @@ function setUpObserver() {
   const changeActiveSec = (entries) => {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
-        let prevIntersect = document.querySelector('.active');
+
+        const prevIntersect = document.querySelector('.active');
         if (prevIntersect) {
           prevIntersect.classList.remove('active');
         };
 
-        var id = entry.target.getAttribute('id');
-        var newActive = document.querySelector(`[href="#${id}"]`).classList.add("active");
-        console.log(entry, entry.target, newActive);
+        const id = entry.target.getAttribute('id');
+        const newActive = document.querySelector(`[href="#${id}"]`).classList.add("active");
       }
     })
   }
@@ -34,6 +34,7 @@ function setUpObserver() {
   const sectionsWithId = [...(document.querySelectorAll('section'))].filter(section => section.id);
   console.log(sectionsWithId);
 
+  //Observing all the sections with an ID, which are sections that are linked in the navBar :D
   sectionsWithId.forEach(section => observer.observe(section));
 }
 
