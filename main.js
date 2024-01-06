@@ -5,6 +5,8 @@
 
 function setUpObserver() {
   //Adding a style element to be apply to apply the pseudo-element style as well.
+  const styleElement = document.head.appendChild(document.createElement('style'));
+  styleElement.innerHTML = '.navBar a.active::after {transform: scaleX(1);transform-origin: left;}'
 
   //Setting up the thresholds, we will be observing the viewport so we don't have to specify a root.
   let options = {

@@ -105,6 +105,7 @@ nav {
 
 .navBar a {
   position: relative;
+  transition: color 200ms ease-in;
 }
 
 .navBar a:hover,
@@ -112,7 +113,6 @@ nav {
   color: #FCE4EC;
   outline: 2px dotted var(--color-neutral-400);
   outline-offset: 5px;
-  transition: color 200ms ease-in;
 }
 
 .navBar a::after {
