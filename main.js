@@ -38,6 +38,7 @@ function setUpObserver() {
   sectionsWithId.forEach(section => observer.observe(section));
 }
 
+//Setting up the observer after the document has been fully parsed and any deferred scripts have been executed
 document.addEventListener('DOMContentLoaded', () => {
   setUpObserver();
 })
