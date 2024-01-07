@@ -110,7 +110,10 @@ nav {
 
 .navBar a:hover,
 .navBar a:focus-visible {
-  color: #FCE4EC;
+  color: var(--color-neutral-400);
+}
+
+.navBar a:focus-visible {
   outline: 2px dotted var(--color-neutral-400);
   outline-offset: 5px;
 }
