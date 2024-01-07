@@ -10,7 +10,7 @@ function setUpObserver() {
 
   //Setting up the thresholds, we will be observing the viewport so we don't have to specify a root.
   let options = {
-    threshold: 0.55,
+    threshold: 0.65,
   };
 
   const changeActiveSec = (entries) => {

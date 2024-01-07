@@ -22,4 +22,5 @@ module.exports = {
   optimization: {
     usedExports: true,
   },
+  devtool: false,
 };
