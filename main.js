@@ -10,7 +10,7 @@ function setUpObserver() {
 
   //Setting up the thresholds, we will be observing the viewport so we don't have to specify a root.
   let options = {
-    threshold: 0.65,
+    threshold: [0.35, 0.65],
   };
 
   const changeActiveSec = (entries) => {
@@ -28,8 +28,15 @@ function setUpObserver() {
       //   };
 
       //refactored!! All we need to do is set the boolean for the toggle as the entry.isIntersecting expression! Now if it is intersecting it will add the class and if not it removes it. All with a single expression addition to the toggle!
+
+      //need a conditional for lookbook because its so big
       const id = entry.target.getAttribute('id');
-      const newActive = document.querySelector(`[href="#${id}"]`).classList.toggle("active", entry.isIntersecting);
+
+      // if (id === 'lookbook') {
+      //   return document.querySelector(`[href="#${id}"]`).classList.toggle("active", entry.intersectionRatio > 0.35);
+      // };
+
+      const newActive = document.querySelector(`[href="#${id}"]`).classList.toggle("active", entry.intersectionRatio > 0.60 || (entry.isIntersecting && id === 'lookbook'));
       // }
     })
   }

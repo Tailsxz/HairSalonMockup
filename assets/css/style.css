@@ -433,7 +433,7 @@ caption {
 
 .lookbook-grid {
   display: grid;
-  gap: 2rem;
+  gap: 1rem;
   grid-template-columns: repeat(auto-fit, 1fr);
   grid-template-areas: 
     'one'
@@ -483,6 +483,11 @@ caption {
   object-position: center;
   object-fit: cover;
   display: block;
+  transition: transform 200ms ease-out;
+}
+
+.grid_image:hover {
+  transform: scale(1.1);
 }
 
 .grid_image.square {
