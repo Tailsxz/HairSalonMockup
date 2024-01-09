@@ -68,6 +68,7 @@ h3 {
 
 .services,
 .features,
+.lookbook,
 .contact,
 .about {
   margin-block: 8rem;
@@ -407,6 +408,76 @@ caption {
   table {
     margin-inline: auto;
   }
+}
+
+/* Lookbook styling */
+.lookbook {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.lookbook .container {
+  width: min(100% - 2rem, 800px);
+}
+
+.lookbook-grid {
+  display: grid;
+  gap: 1rem;
+  grid-auto-columns: min(1fr, 300px);
+  grid-template-areas: 
+    'one two'
+    'one two'
+    'three four'
+    'three four'
+    'five six'
+    'fix six'
+    'seven eight'
+    'seven eight'
+    'nine nine'
+}
+
+.lookbook-grid_image-wrapper:nth-child(1) {
+  grid-area: one;
+}
+.lookbook-grid_image-wrapper:nth-child(1) {
+  grid-area: one;
+}
+.lookbook-grid_image-wrapper:nth-child(2) {
+  grid-area: two;
+}
+.lookbook-grid_image-wrapper:nth-child(3) {
+  grid-area: three;
+}
+.lookbook-grid_image-wrapper:nth-child(4) {
+  grid-area: four;
+}
+.lookbook-grid_image-wrapper:nth-child(5) {
+  grid-area: five;
+}
+.lookbook-grid_image-wrapper:nth-child(6) {
+  grid-area: six;
+}
+.lookbook-grid_image-wrapper:nth-child(7) {
+  grid-area: seven;
+}
+.lookbook-grid_image-wrapper:nth-child(8) {
+  grid-area: eight;
+}
+.lookbook-grid_image-wrapper:nth-child(9) {
+  grid-area: nine;
+}
+
+.grid_image {
+  display: block;
+  width: 100%;
+}
+
+.grid_image.square {
+  aspect-ratio: 1;
+}
+
+.lookbook-grid_image-wrapper {
+  overflow: hidden;
 }
 
 /* Contact Styling */
