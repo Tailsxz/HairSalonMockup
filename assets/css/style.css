@@ -82,7 +82,8 @@ h3 {
 /* Navigation */
 header {
   height: fit-content;
-  position: sticky;
+  width: 100%;
+  position: fixed;
   top: 0;
   background: var(--color-primary-400);
   font-size: var(--fs-smedium);
@@ -505,6 +506,7 @@ footer li {
 .hours {
   flex-shrink: 0;
 }
+
 /* Socials */
 
 .social-links {
