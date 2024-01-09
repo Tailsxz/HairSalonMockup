@@ -428,13 +428,13 @@ caption {
 }
 
 .lookbook .container {
-  width: min(100% - 2rem, 800px);
+  width: min(100% - 2rem, 1200px);
 }
 
 .lookbook-grid {
   display: grid;
-  gap: 1rem;
-  grid-auto-columns: minmax(100%, 1fr);
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, 1fr);
   grid-template-areas: 
     'one'
     'two'
@@ -479,8 +479,10 @@ caption {
 }
 
 .grid_image {
-  display: block;
   width: 100%;
+  object-position: center;
+  object-fit: cover;
+  display: block;
 }
 
 .grid_image.square {
@@ -489,6 +491,38 @@ caption {
 
 .lookbook-grid_image-wrapper {
   overflow: hidden;
+}
+
+@media screen and (min-width: 550px) {
+  .lookbook-grid {
+    grid-template-areas: 
+      'one two'
+      'one two'
+      'three four'
+      'three four'
+      'five six'
+      'five six'
+      'seven eight'
+      'seven eight'
+      'nine nine';
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .tall {
+    height: 100%;
+  }
+
+  .lookbook-grid {
+    grid-template-areas: 
+      'one eight two'
+      'one eight two'
+      'three eight four'
+      'three seven four'
+      'five seven six'
+      'five seven six'
+      'nine nine nine';
+  }
 }
 
 /* Contact Styling */
@@ -579,7 +613,6 @@ textarea {
   textarea {
     width: 200px;
     padding-inline: 0;
-    min-height: 0;
   }
 
   form .button_submit {
