@@ -36,7 +36,7 @@ function setUpObserver() {
       //   return document.querySelector(`[href="#${id}"]`).classList.toggle("active", entry.intersectionRatio > 0.35);
       // };
 
-      const newActive = document.querySelector(`[href="#${id}"]`).classList.toggle("active", entry.intersectionRatio > 0.60 || (entry.isIntersecting && id === 'lookbook'));
+      const newActive = document.querySelector(`[href="#${id}"]`).classList.toggle("active", entry.intersectionRatio > 0.55 || (entry.isIntersecting && id === 'lookbook'));
       // }
     })
   }

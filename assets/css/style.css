@@ -779,6 +779,10 @@ html {
   scroll-margin-top: 9rem;
 }
 
+#lookbook {
+  scroll-margin-top: 3rem;
+}
+
 #contact {
   scroll-margin-top: -.5rem;
 }
