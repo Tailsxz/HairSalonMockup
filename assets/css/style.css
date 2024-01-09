@@ -483,10 +483,12 @@ caption {
   object-position: center;
   object-fit: cover;
   display: block;
-  transition: transform 200ms ease-out;
+  transition: transform 200ms ease-out,
+              filter 200ms ease-out;
 }
 
 .grid_image:hover {
+  filter: contrast(105%);
   transform: scale(1.1);
 }
 
