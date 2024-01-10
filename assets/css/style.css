@@ -59,6 +59,7 @@ p {
   font-size: var(--fs-small);
   margin: 0;
   padding: 0;
+  text-wrap: pretty;
 }
 
 h1,
@@ -105,6 +106,10 @@ header {
   font-size: var(--fs-smedium);
   box-shadow: 5px 0px 20px -15px rgba(0, 0, 0, .7);
   z-index: 1;
+}
+
+header img {
+  width: 150px;
 }
 
 nav {
@@ -162,7 +167,7 @@ nav {
   color: var(--color-neutral-400);
 }
 
-@media screen and (max-width: 47em) {
+@media screen and (max-width: 750px) {
   .navBar {
     opacity: 0;
     overflow: hidden;
@@ -207,7 +212,7 @@ nav {
   width: min(80%, 30ch);
 }
 
-@media screen and (max-width: 47em) {
+@media screen and (max-width: 750px) {
   .hero .container {
     margin: 0;
     display: flex;
@@ -259,6 +264,10 @@ nav {
   opacity: 0;
 }
 
+.feature p {
+  padding-inline-start: .25rem;
+}
+
 .wrapper-img {
   width: 8rem;
   height: 8rem;
@@ -288,7 +297,7 @@ nav {
   background-position: center;
 }
 
-@media screen and (max-width: 47em) {
+@media screen and (max-width: 750px) {
   .features .container{
     flex-direction: column;
     align-items: center;
@@ -332,7 +341,7 @@ nav {
   box-shadow: -10px 10px 0px 0px var(--color-primary-400);
 }
 
-@media screen and (max-width: 47em) {
+@media screen and (max-width: 750px) {
   .about .container {
     display: block;
     text-align: center;
@@ -408,7 +417,7 @@ caption {
   font-size: var(--fs-smedium);
 }
 
-@media screen and (max-width: 47em) {
+@media screen and (max-width: 750px) {
   .services .container {
     width: calc(100% - 2rem);
     flex-direction: column;
@@ -577,6 +586,8 @@ cite {
   margin-block-start: .5rem;
 }
 
+
+
 /* Contact Styling */
 .contact {
   background: #fff;
@@ -740,7 +751,7 @@ footer li {
   width: 30px;
 }
 
-@media screen and (max-width: 47em) {
+@media screen and (max-width: 750px) {
   footer .container {
     width: calc(100% - 5rem);
     display: block;
@@ -849,4 +860,17 @@ html {
 .embla__slide {
   flex: 0 0 30%;
   min-width: 0;
+}
+
+
+@media screen and (max-width: 950px) {
+  .embla__slide {
+    flex-basis: 50%;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .embla__slide {
+    flex-basis: 90%;
+  }
 }
