@@ -12,6 +12,7 @@
 
 :root {
   /* Color Custom Properties */
+  --color-neutral-300: #92f1f8;
   --color-neutral-400: #FCE4EC;
   --color-primary-400: #e22d64;
   --color-primary-700: #93032E;
@@ -99,11 +100,12 @@ header .container {
 }
 
 header {
+  color: var(--color-neutral-400);
   height: fit-content;
   width: 100%;
   position: fixed;
   top: 0;
-  background: var(--color-primary-400);
+  background: var(--color-primary-700);
   font-size: var(--fs-smedium);
   box-shadow: 5px 0px 20px -15px rgba(0, 0, 0, .7);
   z-index: 1;
@@ -838,7 +840,7 @@ html {
 }
 
 #lookbook {
-  scroll-margin-top: 3rem;
+  scroll-margin-top: -4rem;
 }
 
 #contact {
