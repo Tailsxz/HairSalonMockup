@@ -14,7 +14,8 @@
   /* Color Custom Properties */
   --color-neutral-400: #FCE4EC;
   --color-primary-400: #e22d64;
-  --color-primary-300: #231651;
+  --color-primary-700: #93032E;
+  --color-secondary-400: #231651;
   --bg: var(--color-neutral-400);
 
   /* Utility Custom Properties */
@@ -248,7 +249,7 @@ nav {
   background-color: #fff;
   box-shadow: 0 1rem 2rem -1rem rgb(0 0 0 / .2);
   border-radius: 10px;
-  color: var(--color-primary-500);
+  color: var(--color-secondary-400);
   padding: 1rem;
 }
 
@@ -778,8 +779,8 @@ footer li {
 
 .button {
   display: inline-block;
-  border: 2px solid var(--color-primary-400);
-  background: var(--color-primary-400);
+  border: 2px solid var(--color-primary-700);
+  background: var(--color-primary-700);
   color: var(--color-neutral-400);
   font-size: var(--fs-small);
   margin-inline-start: 2px;
@@ -788,7 +789,7 @@ footer li {
   font-weight: 700;
   cursor: pointer;
   line-height: 1;
-  outline: 2px solid var(--color-primary-400);
+  outline: 2px solid var(--color-primary-700);
   outline-offset: -2px;
   transition: outline-offset 100ms ease-in;
 }

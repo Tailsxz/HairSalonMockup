@@ -20,7 +20,7 @@ To get a copy of this project, you can fork the repo then clone it as your own.
 [Clone the Repo](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository)
 
 ### Optimizations
-At the current time, I am planning to implement some image/svg optimizations, adjusting contrast for the overall website for better readability, and to add a testimonials/lookbook(gallery) sections.
+At the current time, I am planning to implement some image/svg optimizations, adjusting contrast for the overall website for better readability. Need to implement hamburger menu as well.
 
 ### Knowledge gained from this project
 Learned how to draw inspiration from other designs. Also learned what the structure of an HTML document should look like for a standard business website. 
