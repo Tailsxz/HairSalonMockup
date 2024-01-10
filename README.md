@@ -29,3 +29,5 @@ Figured out a way to use the ::before pseudo element when using background image
 Learned A LOT about layout modes(algorithms) specifically regarding the table layout algorithms. Using a table-layout value of fixed will use the fixed algorithm, allowing the author to define the widths of the table, and its rows and columns.
 First time hosting fonts locally, also first time converting ttf to woff2.
 Got intersectionObserver API to work! First time using it as well, lets go!
+Got more experience implementing babel and webpack/configuring webpack to work with babel.
+Used embla to create a testimonial carousel, along with media queries for a responsive carousel.
