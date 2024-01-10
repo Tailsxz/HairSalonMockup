@@ -8,7 +8,7 @@ function setUpObserver() {
   styleElement.innerHTML = '.navBar a.active::after {transform: scaleX(1);transform-origin: left;}'
 
   //Setting up the thresholds, we will be observing the viewport so we don't have to specify a root.
-  let options = {
+  const options = {
     threshold: [0.35, 0.65],
   };
 
@@ -30,7 +30,6 @@ function setUpObserver() {
 
       //need a conditional for lookbook because its so big
       const id = entry.target.getAttribute('id');
-
       // if (id === 'lookbook') {
       //   return document.querySelector(`[href="#${id}"]`).classList.toggle("active", entry.intersectionRatio > 0.35);
       // };

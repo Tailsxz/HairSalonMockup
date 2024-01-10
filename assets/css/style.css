@@ -13,7 +13,7 @@
 :root {
   /* Color Custom Properties */
   --color-neutral-400: #FCE4EC;
-  --color-primary-400: #93032E;
+  --color-primary-400: #e22d64;
   --color-primary-300: #fff175c0;
   --bg: var(--color-neutral-400);
 
@@ -373,7 +373,6 @@ caption,
 th,
 td {
   padding-block-end: .5rem;
-  color: var(--color-primary-400);
   font-size: var(--fs-smedium);
 }
 
