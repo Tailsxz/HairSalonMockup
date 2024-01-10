@@ -14,7 +14,7 @@
   /* Color Custom Properties */
   --color-neutral-400: #FCE4EC;
   --color-primary-400: #e22d64;
-  --color-primary-300: #fff175c0;
+  --color-primary-300: #231651;
   --bg: var(--color-neutral-400);
 
   /* Utility Custom Properties */
@@ -248,7 +248,7 @@ nav {
   background-color: #fff;
   box-shadow: 0 1rem 2rem -1rem rgb(0 0 0 / .2);
   border-radius: 10px;
-  color: var(--color-primary-400);
+  color: var(--color-primary-500);
   padding: 1rem;
 }
 
@@ -848,6 +848,7 @@ html {
 
 .embla {
   overflow: hidden;
+  border-radius: 4px;
 }
 
 .embla__container {
