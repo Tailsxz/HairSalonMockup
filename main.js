@@ -1,6 +1,5 @@
-// const sayHello = (name) => console.log(`Hello, ${name}! How are you today?`);
+import EmblaCarousel from 'embla-carousel'
 
-// sayHello('Tai');
 
 //Function to set up intersection observer to be apply to apply currently intersecting section styles to the appropriate link in the navBar.
 function setUpObserver() {
@@ -51,7 +50,15 @@ function setUpObserver() {
   sectionsWithId.forEach(section => observer.observe(section));
 }
 
+//Function to initialize and set up the EmblaCarousel
+function initEmbla() {
+  const emblaNode = document.querySelector('.embla');
+  const options = { loop: true };
+  const emblaApi = EmblaCarousel(emblaNode, options);
+}
+
 //Setting up the observer after the document has been fully parsed and any deferred scripts have been executed
 document.addEventListener('DOMContentLoaded', () => {
   setUpObserver();
+  initEmbla();
 })

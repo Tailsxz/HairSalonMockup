@@ -26,6 +26,11 @@
   --fs-xlarge: 2.986rem;
 }
 
+/* Utility Classes */ 
+.center {
+  text-align: center;
+}
+
 /* Default Styles */
 body {
   margin: 0;
@@ -224,10 +229,6 @@ nav {
 
 /* Features Styling */
 
-.features {
-  text-align: center;
-}
-
 .features .container {
   display: flex;
   justify-content: center;
@@ -360,10 +361,6 @@ nav {
   width: 80%;
 }
 
-.services h2 {
-  text-align: center;
-}
-
 .service,
 .service tr:first-child {
   border-collapse: collapse;
@@ -423,9 +420,6 @@ caption {
 }
 
 /* Lookbook styling */
-.lookbook {
-  text-align: center;
-}
 
 .lookbook .container {
   width: min(100% - 2rem, 1200px);
@@ -532,6 +526,9 @@ caption {
   }
 }
 
+/* Testimonials Styling */
+
+
 /* Contact Styling */
 .contact {
   background: #fff;
@@ -549,14 +546,12 @@ caption {
 }
 
 .contact h2 {
-  text-align: center;
   padding-block-start: 8rem;
 }
 
 .contact legend {
   font-size: var(--fs-medium);
   padding-block-end: 2rem;
-  text-align: center;
 }
 
 textarea,
@@ -787,4 +782,19 @@ html {
 
 #contact {
   scroll-margin-top: -.5rem;
+}
+
+/* Carousel Styling */
+
+.embla {
+  overflow: hidden;
+}
+
+.embla__container {
+  display: flex;
+}
+
+.embla__slide {
+  flex: 0 0 100%;
+  min-width: 0;
 }
