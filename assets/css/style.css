@@ -713,8 +713,19 @@ footer .container {
   padding-block: 2rem;
 }
 
-.copyright {
-  align-self: center;
+.copyright-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.copyright-info a > p {
+  width: 80%;
+  padding-block: .5rem;
+}
+
+.copyright-info a {
+  width: fit-content;
 }
 
 footer li {
@@ -853,7 +864,6 @@ html {
 
 .embla {
   overflow: hidden;
-  border-radius: 4px;
   padding-block: 1rem;
 }
 
