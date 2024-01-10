@@ -420,6 +420,10 @@ caption {
 }
 
 /* Lookbook styling */
+.lookbook {
+  background: white;
+  padding-block: 8rem;
+}
 
 .lookbook .container {
   width: min(100% - 2rem, 1200px);
@@ -492,6 +496,7 @@ caption {
 
 .lookbook-grid_image-wrapper {
   overflow: hidden;
+  border-radius: 2px;
 }
 
 @media screen and (min-width: 550px) {
@@ -527,7 +532,51 @@ caption {
 }
 
 /* Testimonials Styling */
+.testimonial {
+  display: flex;
+  background: white;
+  border-radius: 10px;
+  flex-direction: column;
+  align-items: center;
+  font-size: var(--fs-smedium);
+}
 
+.testimonial:last-child {
+  margin-inline-end: 1rem;
+}
+
+.testimonials img {
+  width: 100px;
+  margin-block-start: 1rem;
+  aspect-ratio: 1 / 1;
+  border-radius: 100vh;
+}
+
+.testimonial_stars img {
+  width: 15px;
+}
+
+.testimonial p {
+  font-size: var(--fs-smedium);
+}
+
+blockquote {
+  hanging-punctuation: first last;
+  margin: 1rem 2rem 2rem;
+}
+
+blockquote p::before {
+  content: open-quote;
+}
+
+blockquote p::after {
+  content: close-quote;
+}
+
+cite {
+  display: inline-block;
+  margin-block-start: .5rem;
+}
 
 /* Contact Styling */
 .contact {
@@ -792,10 +841,13 @@ html {
 }
 
 .embla__container {
+  margin-inline: auto;
   display: flex;
+  width: 90%;
+  gap: 1rem;
 }
 
 .embla__slide {
-  flex: 0 0 100%;
+  flex: 0 0 30%;
   min-width: 0;
 }

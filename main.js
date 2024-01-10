@@ -53,7 +53,7 @@ function setUpObserver() {
 //Function to initialize and set up the EmblaCarousel
 function initEmbla() {
   const emblaNode = document.querySelector('.embla');
-  const options = { loop: true };
+  const options = { loop: true, containScroll: false, align: 'center', startIndex: 1 };
   const emblaApi = EmblaCarousel(emblaNode, options);
 }
 
