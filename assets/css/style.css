@@ -274,7 +274,7 @@ nav {
 /* Hero Styling */
 
 .hero {
-  background-image: url(../src/mainBgAlt.jpg);
+  background-image: url(../src/mainBg.jpg);
   background-repeat: no-repeat;
   background-position: center right 20%;
   background-size: cover;
@@ -328,6 +328,25 @@ nav {
     flex-flow: column nowrap;
     margin-inline: auto;
     text-align: center;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .hero {
+    background-image: url(../src/mainBg1300.jpg);
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .hero {
+    background-image: url(../src/mainBg950.jpg);
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .hero {
+    background-image: url(../src/mainBg550.jpg);
+    background-position: center 20px;
   }
 }
 
