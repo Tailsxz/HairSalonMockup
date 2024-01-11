@@ -58,6 +58,23 @@ function initEmbla() {
 
 //Setting up the observer after the document has been fully parsed and any deferred scripts have been executed
 document.addEventListener('DOMContentLoaded', () => {
+  applyNavAnimations()
   setUpObserver();
   initEmbla();
 })
+
+//Applying hamburger menu animations
+function applyNavAnimations() {
+  const hamburgerButton = document.querySelector('.hamburger_nav');
+  hamburgerButton.addEventListener('click', () => {
+    const currentState = hamburgerButton.getAttribute('data-state');
+
+    if (!currentState || currentState === 'closed') {
+      hamburgerButton.setAttribute('data-state', 'opened');
+      hamburgerButton.setAttribute('aria-expanded', 'true');
+    } else {
+      hamburgerButton.setAttribute('data-state', 'closed');
+      hamburgerButton.setAttribute('aria-expanded', 'false');
+    }
+  });
+};
