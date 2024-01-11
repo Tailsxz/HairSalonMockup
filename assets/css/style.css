@@ -903,51 +903,7 @@ html {
   padding: .5rem;
 }
 
-/* Hamburger Styling */
-/* .hamburger_nav {
-  background: transparent;
-  border-radius: 1rem;
-  cursor: pointer;
-  border: 0;
-}
-
-.hamburger_nav .line {
-  transition: 
-  y 175ms ease-in 175ms,
-  rotate 175ms ease-in,
-  opacity 0ms 175ms;
-  transform-origin: center;
-}
-
-.hamburger_nav:hover .line {
-  transition: 
-    y 175ms ease-in,
-    rotate 175ms ease-in 175ms,
-    opacity 0ms 175ms;
-}
-
-.hamburger_nav:hover .top {
-  transform: translateY(20px); 
-  y:45px;
-}
-
-.hamburger_nav:hover .bottom {
-  transform: translateY(-20px); 
-  y:45px;
-}
-
-.hamburger_nav:hover .middle {
-  opacity: 0;
-}
-
-.hamburger_nav:hover .top {
-  rotate: 45deg;
-}
-
-.hamburger_nav:hover .bottom {
-  rotate: -45deg;
-} */
-
+/* Hamburger Styling/Animations */
 .hamburger_nav {
   background: transparent;
   border: 0;
@@ -958,22 +914,20 @@ html {
 }
 
 .hamburger_nav[data-state="closed"] .line {
-  animation: open-icon 1s forwards;
+  animation: open-icon 500ms forwards;
 }
 
 .hamburger_nav[data-state="opened"] .line {
-  animation: close-icon 1s forwards;
+  animation: close-icon 500ms forwards;
 }
 
-/* .hamburger_two:hover .top {
-  --rotation: 45deg;
-  --translate: 10px;
+.hamburger_nav .hamburger {
+  transition: rotate 800ms 200ms;
 }
 
-.hamburger_two:hover .bottom {
-  --rotation: -45deg;
-  --translate: -10px;
-}  */
+.hamburger_nav[data-state="opened"] .hamburger {
+  rotate: 1turn;
+}
 
 .hamburger_nav .line.top {
   --translate: 10px;
