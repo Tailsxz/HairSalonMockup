@@ -66,6 +66,8 @@ document.addEventListener('DOMContentLoaded', () => {
 //Applying hamburger menu animations
 function applyNavAnimations() {
   const hamburgerButton = document.querySelector('.hamburger_nav');
+  const navBar = document.querySelector('.navBar');
+
   hamburgerButton.addEventListener('click', () => {
     const currentState = hamburgerButton.getAttribute('data-state');
 
@@ -76,5 +78,6 @@ function applyNavAnimations() {
       hamburgerButton.setAttribute('data-state', 'closed');
       hamburgerButton.setAttribute('aria-expanded', 'false');
     }
+  navBar.classList.toggle('openNav', hamburgerButton.getAttribute('aria-expanded') === 'true');
   });
 };

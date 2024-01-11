@@ -164,12 +164,97 @@ nav {
   color: var(--color-neutral-400);
 }
 
+/* Hamburger Styling/Animations */
+
+.hamburger_nav {
+  display: none;
+  position: absolute;
+  margin-inline: 1rem;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: transparent;
+  border: 0;
+}
+
+.hamburger_nav .line {
+  transform-origin: center;
+}
+
+.hamburger_nav[data-state="closed"] .line {
+  animation: open-icon 500ms forwards;
+}
+
+.hamburger_nav[data-state="opened"] .line {
+  animation: close-icon 500ms forwards;
+}
+
+.hamburger_nav .hamburger {
+  transition: rotate 800ms 200ms;
+}
+
+.hamburger_nav[data-state="opened"] .hamburger {
+  rotate: 1turn;
+}
+
+.hamburger_nav .line.top {
+  --translate: 10px;
+  --rotation: 45deg;
+}
+
+.hamburger_nav .line.bottom {
+  --rotation: -45deg;
+  --translate: -10px;
+}
+
 @media screen and (max-width: 750px) {
+  header {
+    isolation: isolate;
+  }
+
   .navBar {
-    opacity: 0;
-    overflow: hidden;
+    background: #e22d64;
+    flex-direction: column;
+    padding: 3rem 5rem;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: translateX(100%);
+    margin-block-start: 82px;
+    transition: transform 300ms 200ms ease-in;
+    border-bottom-left-radius: 10px;
+  }
+
+  .openNav {
+    transform: translateX(0);
   }
   /* For hamburger menu, within the media query use the width: min(nearly 100% for mobile, default size for menu when not mobile. It will use the second value when it is big enough and swap to 100% of the screen when mobile, whichever is smaller!) */
+
+  .hamburger_nav {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .navBar {
+    border-bottom-left-radius: 0;
+    align-items: center;
+    padding: 2rem 0;
+    width: 100%;
+  }
+}
+
+@keyframes close-icon {
+  0% { stroke-dashoffset: 0; }
+  40% { stroke-dashoffset: 79.9; transform: translateY(var(--translate));}
+  60% { stroke-dashoffset: 79.9; transform: translateY(var(--translate)); rotate: var(--rotation);}
+  100% { stroke-dashoffset: 0; transform: translateY(var(--translate)); rotate: var(--rotation);}
+}
+
+@keyframes open-icon {
+  0% { stroke-dashoffset: 0; transform: translateY(var(--translate)); rotate: var(--rotation); }
+  40% { stroke-dashoffset: 79.9;}
+  100% { stroke-dashoffset: 0;}
 }
 
 /* Hero Styling */
@@ -209,15 +294,7 @@ nav {
   width: min(80%, 30ch);
 }
 
-@media screen and (max-width: 750px) {
-  .hero .container {
-    margin: 0;
-    display: flex;
-    align-items: center;
-    flex-flow: column nowrap;
-    margin-inline: auto;
-    text-align: center;
-  }
+@media screen and (max-width: 450px) {
   .hero h1 {
     font-size: var(--fs-large);
     width: min(80%, 30ch);
@@ -226,6 +303,17 @@ nav {
   .hero p {
     font-size: var(--fs-xsmall);
     width: min(80%, 30ch);
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .hero .container {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    flex-flow: column nowrap;
+    margin-inline: auto;
+    text-align: center;
   }
 }
 
@@ -344,6 +432,14 @@ nav {
     text-align: center;
   }
 
+  .about h2 {
+    width: 100%;
+  }
+  
+  .wrapper-content {
+    text-align: center;
+  }
+
   .about p {
     margin-inline: auto;
   }
@@ -353,6 +449,7 @@ nav {
     margin: 0 0 2rem 0;
     box-shadow: 0px 20px 0px -10px var(--color-primary-400);
   }
+
 }
 
 /* Services Styling */ 
@@ -901,53 +998,4 @@ html {
 
 .citations li {
   padding: .5rem;
-}
-
-/* Hamburger Styling/Animations */
-.hamburger_nav {
-  background: transparent;
-  border: 0;
-}
-
-.hamburger_nav .line {
-  transform-origin: center;
-}
-
-.hamburger_nav[data-state="closed"] .line {
-  animation: open-icon 500ms forwards;
-}
-
-.hamburger_nav[data-state="opened"] .line {
-  animation: close-icon 500ms forwards;
-}
-
-.hamburger_nav .hamburger {
-  transition: rotate 800ms 200ms;
-}
-
-.hamburger_nav[data-state="opened"] .hamburger {
-  rotate: 1turn;
-}
-
-.hamburger_nav .line.top {
-  --translate: 10px;
-  --rotation: 45deg;
-}
-
-.hamburger_nav .line.bottom {
-  --rotation: -45deg;
-  --translate: -10px;
-}
-
-@keyframes close-icon {
-  0% { stroke-dashoffset: 0; }
-  40% { stroke-dashoffset: 79.9; transform: translateY(var(--translate));}
-  60% { stroke-dashoffset: 79.9; transform: translateY(var(--translate)); rotate: var(--rotation);}
-  100% { stroke-dashoffset: 0; transform: translateY(var(--translate)); rotate: var(--rotation);}
-}
-
-@keyframes open-icon {
-  0% { stroke-dashoffset: 0; transform: translateY(var(--translate)); rotate: var(--rotation); }
-  40% { stroke-dashoffset: 79.9;}
-  100% { stroke-dashoffset: 0;}
 }
