@@ -13,6 +13,13 @@
 <body>
   <header>
     <div class="container">
+      <button class="hamburger_nav" aria-controls="navigationBar" aria-expanded="false">
+        <svg class="hamburger" viewBox="0 0 100 100" width="40">
+          <rect class="line top" width="60" height="10" x="20" y="25" rx="5" fill="var(--color-neutral-400)"></rect>
+          <rect class="line middle" width="60" height="10" x="20" y="45" rx="5" fill="var(--color-neutral-400)"></rect>
+          <rect class="line bottom" width="60" height="10" x="20" y="65" rx="5" fill="var(--color-neutral-400)"></rect>
+        </svg>
+      </button>
       <nav class="navigation" role="navigation" aria-label="main" >
       <img src="assets/src/vector/default-monochrome.svg"  alt="Sleek Nails Logo">
       <ul class="navBar">
@@ -320,7 +327,7 @@
             </div>
             <div class="message">
               <label for="message">Message <span>(required*)</span></label>
-              <textarea name="message" id="message"></textarea>
+              <textarea name="message" id="message" required></textarea>
             </div>
             <button class="button button_submit">
               Submit
