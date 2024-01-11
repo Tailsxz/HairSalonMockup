@@ -913,21 +913,28 @@ html {
 
 .hamburger_nav .line {
   transition: 
-    y 300ms ease-in 300ms,
-    rotate 300ms ease-in,
-    opacity 0ms 300ms;
+  y 175ms ease-in 175ms,
+  rotate 175ms ease-in,
+  opacity 0ms 175ms;
   transform-origin: center;
+  transform: translateY(0);
 }
 
 .hamburger_nav:hover .line {
   transition: 
-    y 300ms ease-in,
-    rotate 300ms ease-in 300ms,
-    opacity 0ms 300ms;
+    y 175ms ease-in,
+    rotate 175ms ease-in 175ms,
+    opacity 0ms 175ms;
 }
 
-.hamburger_nav:hover :is(.top, .bottom) {
-  y: 45;
+.hamburger_nav:hover .top {
+  /* transform: translateY(20px); */
+  y:45px;
+}
+
+.hamburger_nav:hover .bottom {
+  /* transform: translateY(-20px); */
+  y:45px;
 }
 
 .hamburger_nav:hover .middle {
@@ -940,4 +947,9 @@ html {
 
 .hamburger_nav:hover .bottom {
   rotate: -45deg;
+}
+
+.hamburger_two {
+  background: transparent;
+  border: 0;
 }
