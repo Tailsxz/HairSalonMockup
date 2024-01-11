@@ -31,3 +31,5 @@ First time hosting fonts locally, also first time converting ttf to woff2.
 Got intersectionObserver API to work! First time using it as well, lets go!
 Got more experience implementing babel and webpack/configuring webpack to work with babel.
 Used embla to create a testimonial carousel, along with media queries for a responsive carousel.
+First usage of data-attributes to define a state for the navigation bar and hamburger menu.
+First time creating my own SVG for a hamburger icon, played around with strokes and dasharrays/offsets.
