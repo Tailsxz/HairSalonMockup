@@ -173,6 +173,7 @@ nav {
   right: 0;
   top: 0;
   bottom: 0;
+  color: transparent;
   background: transparent;
   border: 0;
 }
@@ -207,6 +208,19 @@ nav {
   --translate: -10px;
 }
 
+@keyframes close-icon {
+  0% { stroke-dashoffset: 0; }
+  40% { stroke-dashoffset: 79.9; transform: translateY(var(--translate));}
+  60% { stroke-dashoffset: 79.9; transform: translateY(var(--translate)); rotate: var(--rotation);}
+  100% { stroke-dashoffset: 0; transform: translateY(var(--translate)); rotate: var(--rotation);}
+}
+
+@keyframes open-icon {
+  0% { stroke-dashoffset: 0; transform: translateY(var(--translate)); rotate: var(--rotation); }
+  40% { stroke-dashoffset: 79.9;}
+  100% { stroke-dashoffset: 0;}
+}
+
 @media screen and (max-width: 750px) {
   header {
     isolation: isolate;
@@ -217,12 +231,25 @@ nav {
     flex-direction: column;
     padding: 3rem 5rem;
     position: absolute;
+    color: black;
     right: 0;
     top: 0;
     transform: translateX(100%);
     margin-block-start: 82px;
     transition: transform 300ms 200ms ease-in;
     border-bottom-left-radius: 10px;
+  }
+
+  .navBar a:focus-visible {
+    outline: 2px dotted black;
+  }
+
+  .navBar a:after {
+    color: black;
+  }
+
+  .active {
+    color: black;
   }
 
   .openNav {
@@ -242,19 +269,6 @@ nav {
     padding: 2rem 0;
     width: 100%;
   }
-}
-
-@keyframes close-icon {
-  0% { stroke-dashoffset: 0; }
-  40% { stroke-dashoffset: 79.9; transform: translateY(var(--translate));}
-  60% { stroke-dashoffset: 79.9; transform: translateY(var(--translate)); rotate: var(--rotation);}
-  100% { stroke-dashoffset: 0; transform: translateY(var(--translate)); rotate: var(--rotation);}
-}
-
-@keyframes open-icon {
-  0% { stroke-dashoffset: 0; transform: translateY(var(--translate)); rotate: var(--rotation); }
-  40% { stroke-dashoffset: 79.9;}
-  100% { stroke-dashoffset: 0;}
 }
 
 /* Hero Styling */
