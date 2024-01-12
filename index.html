@@ -6,14 +6,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Serving professional manicures and pedicures in Chicago for over 20 years. With a dedicated team specializing in pedicures and manicures. Treat yourself to a wondrous experience — book your appointment now!">
   <meta name="author" content="&mdash;Tai Phan">
+  <link rel="preload" fetchpriority="high" as="image" href="assets/src/mainBg.webp" type="image/jpg">
   <link rel="stylesheet" href="assets/css/normalize.css">
   <link rel="stylesheet" href="assets/css/style.css">
-  <!-- <link rel="preload" fetchpriority="high" as="image" href="assets/src/mainBgAltSmall.jpg" type="image/jpg"> We should replace the background image for the hero with an absolutely positioned image -->
 </head>
 <body>
   <header>
     <div class="container">
-      <button class="hamburger_nav" aria-controls="navigationBar" aria-expanded="false" tabindex="1"><span>hamburger menu</span>
+      <button class="hamburger_nav" aria-controls="navigationBar" aria-expanded="false" aria-label="Open Navigation Menu" tabindex="1">
         <svg class="hamburger" viewBox="0 0 100 100" width="40">
           <line class="line top"
             x1="10" x2="90" y1="40" y2="40"
@@ -46,8 +46,8 @@
     </div>
   </header>
   <main>
-    <section id="home" class="hero" data-smallImgSrc="../src/mainBgAltSmall.jpg">
-      <img src="assets/src/mainBg.jpg" alt="image of beautiful glossy pink nails">
+    <section id="home" class="hero">
+      <img src="assets/src/mainBg.webp" loading="lazy" fetchpriority="high" alt="image of beautiful glossy pink nails">
       <div class="container">
         <h1>
         Treat yourself at Sleek Nails
@@ -240,7 +240,7 @@
           <div class="lookbook-grid_image-wrapper"><img class="grid_image square" src="assets/src/lookbook/lookbook4-desktop.webp" alt=""></div>
           <div class="lookbook-grid_image-wrapper"><img class="grid_image tall" src="assets/src/lookbook/lookbook8-desktop.webp" alt=""></div>
           <div class="lookbook-grid_image-wrapper"><img class="grid_image tall" src="assets/src/lookbook/lookbook3-desktop.webp" alt=""></div>
-          <div class="lookbook-grid_image-wrapper"><img class="grid_image wide" src="assets/src/lookbook/lookbook1-desktop.jpg" alt=""></div>
+          <div class="lookbook-grid_image-wrapper"><img class="grid_image wide" src="assets/src/lookbook/lookbook1-desktop.webp" alt=""></div>
         </div>
       </div>
     </section>

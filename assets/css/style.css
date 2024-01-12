@@ -213,12 +213,6 @@ nav {
   --translate: -10px;
 }
 
-/* removing the accessibility span from the normal flow so it doesn't increase the hamburger svg size */
-.hamburger_nav span {
-  position: absolute;
-  transform: translateX(100%);
-}
-
 @keyframes close-icon {
   0% { stroke-dashoffset: 0; }
   40% { stroke-dashoffset: 79.9; transform: translateY(var(--translate));}
