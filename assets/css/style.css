@@ -285,16 +285,19 @@ nav {
 /* Hero Styling */
 
 .hero {
-  background-image: url(../src/mainBg.webp);
-  background-repeat: no-repeat;
-  background-position: center right 20%;
-  background-size: cover;
   display: flex;
   align-items: center;
   height: 100svh;
   position: relative;
   overflow: hidden;
   isolation: isolate;
+}
+
+.hero img {
+  z-index: -2;
+  position: absolute;
+  width: 100%;
+  object-fit: cover;
 }
 
 .hero .container {
@@ -342,7 +345,8 @@ nav {
   }
 }
 
-@media screen and (max-width: 1300px) {
+/* Created a dedicated, absolutely positioned image! Don't need these anymore. */
+/* @media screen and (max-width: 1300px) {
   .hero {
     background-image: url(../src/mainBg1300.webp);
   }
@@ -359,7 +363,7 @@ nav {
     background-image: url(../src/mainBg550.webp);
     background-position: center 20px;
   }
-}
+} */
 
 /* Features Styling */
 
