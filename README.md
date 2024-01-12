@@ -20,7 +20,7 @@ To get a copy of this project, you can fork the repo then clone it as your own.
 [Clone the Repo](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository)
 
 ### Optimizations
-Finished most of the image resizing, just need to resize images for lookbook, might use srcset! After resizing is done, then ill convert to webp for even further optimization. 
+Converted to webp and all resized with srcsets! now just need to set explicit width/height attributes on each image so the browser can know the space to reserve to prevent CLS.
 
 ### Knowledge gained from this project
 Learned how to draw inspiration from other designs. Also learned what the structure of an HTML document should look like for a standard business website. 
