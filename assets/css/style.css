@@ -169,13 +169,18 @@ nav {
 .hamburger_nav {
   display: none;
   position: absolute;
+  max-width: min-content;
+  max-height: min-content;
   margin-inline: 1rem;
   right: 0;
-  top: 0;
-  bottom: 0;
+  top: 25%;
   color: transparent;
   background: transparent;
   border: 0;
+}
+
+.hamburger_nav:focus-visible {
+  outline: 2px dotted var(--color-neutral-400)  
 }
 
 .hamburger_nav .line {
@@ -206,6 +211,12 @@ nav {
 .hamburger_nav .line.bottom {
   --rotation: -45deg;
   --translate: -10px;
+}
+
+/* removing the accessibility span from the normal flow so it doesn't increase the hamburger svg size */
+.hamburger_nav span {
+  position: absolute;
+  transform: translateX(100%);
 }
 
 @keyframes close-icon {

@@ -20,7 +20,7 @@ To get a copy of this project, you can fork the repo then clone it as your own.
 [Clone the Repo](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository)
 
 ### Optimizations
-Finished most of the image resizing, just need to resize images for lookbook, might use srcset! After resizing is done, then ill convert to webp for even further optimization. Add event listener on keypress for the hamburger.
+Finished most of the image resizing, just need to resize images for lookbook, might use srcset! After resizing is done, then ill convert to webp for even further optimization. 
 
 ### Knowledge gained from this project
 Learned how to draw inspiration from other designs. Also learned what the structure of an HTML document should look like for a standard business website. 
@@ -33,3 +33,4 @@ Got more experience implementing babel and webpack/configuring webpack to work w
 Used embla to create a testimonial carousel, along with media queries for a responsive carousel.
 First usage of data-attributes to define a state for the navigation bar and hamburger menu.
 First time creating my own SVG for a hamburger icon, played around with strokes and dasharrays/offsets.
+Learned that an on keypress event is not needed as when an element is focused and space or enter is press, this will fire the click event for that element.
