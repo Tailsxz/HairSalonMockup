@@ -572,7 +572,7 @@ caption {
 }
 
 .lookbook .container {
-  width: min(100% - 2rem, 1200px);
+  width: min(100% - 13rem, 1200px);
 }
 
 .lookbook-grid {
@@ -646,6 +646,9 @@ caption {
 }
 
 @media screen and (min-width: 550px) {
+  .lookbook .container {
+    width: min(100% - 2rem, 1200px);
+  }
   .lookbook-grid {
     grid-template-areas: 
       'one two'
