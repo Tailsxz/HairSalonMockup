@@ -466,6 +466,7 @@ nav {
   align-self: center;
   margin-inline-start: 10px;
   width: min(50% - 2rem, 600px);
+  height: 100%;
   box-shadow: -10px 10px 0px 0px var(--color-primary-400);
 }
 
@@ -623,6 +624,7 @@ caption {
 
 .grid_image {
   width: 100%;
+  height: 100%;
   object-position: center;
   object-fit: cover;
   display: block;
@@ -663,10 +665,6 @@ caption {
 }
 
 @media screen and (min-width: 1000px) {
-  .tall {
-    height: 100%;
-  }
-
   .lookbook-grid {
     grid-template-areas: 
       'one eight two'
