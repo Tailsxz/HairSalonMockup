@@ -324,7 +324,7 @@ nav {
   width: min(80%, 30ch);
 }
 
-.hero_image {
+.not-loaded {
   opacity: 0;
 }
 

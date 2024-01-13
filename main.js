@@ -64,9 +64,8 @@ function hideUntilLoaded() {
     heroImg.classList.add('loaded')
   }
 
-  if (heroImg.complete) {
-    loaded();
-  } else {
+  if (!heroImg.complete) {
+    heroImg.classList.add('not-loaded');
     heroImg.addEventListener('load', loaded);
   }
 }
