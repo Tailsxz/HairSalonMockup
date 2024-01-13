@@ -56,21 +56,31 @@ function initEmbla() {
   const emblaApi = EmblaCarousel(emblaNode, options);
 }
 
-//Setting up the observer after the document has been fully parsed and any deferred scripts have been executed
-document.addEventListener('DOMContentLoaded', () => {
-  applyNavAnimations()
-  setUpObserver();
-  initEmbla();
-})
+//Hiding hero until it is fully loaded;
+function hideUntilLoaded() {
+  const heroImg = document.querySelector('.hero_image');
+  console.log(heroImg)
+  function loaded() {
+    heroImg.classList.add('loaded')
+  }
+
+  if (heroImg.complete) {
+    loaded();
+  } else {
+    heroImg.addEventListener('load', loaded);
+  }
+}
+
+
 
 //Applying hamburger menu animations
 function applyNavAnimations() {
   const hamburgerButton = document.querySelector('.hamburger_nav');
   const navBar = document.querySelector('.navBar');
-
+  
   hamburgerButton.addEventListener('click', () => {
     const currentState = hamburgerButton.getAttribute('data-state');
-
+    
     if (!currentState || currentState === 'closed') {
       hamburgerButton.setAttribute('data-state', 'opened');
       hamburgerButton.setAttribute('aria-expanded', 'true');
@@ -78,7 +88,16 @@ function applyNavAnimations() {
       hamburgerButton.setAttribute('data-state', 'closed');
       hamburgerButton.setAttribute('aria-expanded', 'false');
     }
-
-  navBar.classList.toggle('openNav', hamburgerButton.getAttribute('aria-expanded') === 'true');
+    
+    navBar.classList.toggle('openNav', hamburgerButton.getAttribute('aria-expanded') === 'true');
   });
 };
+
+
+//Calling all of our setup functions once the DOM has been loaded.
+document.addEventListener('DOMContentLoaded', () => {
+  hideUntilLoaded();
+  applyNavAnimations()
+  setUpObserver();
+  initEmbla();
+})

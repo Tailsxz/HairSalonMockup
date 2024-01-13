@@ -324,6 +324,16 @@ nav {
   width: min(80%, 30ch);
 }
 
+.hero_image {
+  opacity: 0;
+}
+
+.loaded {
+  opacity: 1;
+  transition: 150ms ease-in-out;
+}
+
+
 @media screen and (max-width: 450px) {
   .hero h1 {
     font-size: var(--fs-large);
