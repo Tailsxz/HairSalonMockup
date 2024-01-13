@@ -692,11 +692,12 @@ caption {
   margin-inline-end: 1rem;
 }
 
-.testimonials img {
+.testimonials .testimonial_image {
   margin-block-start: 1rem;
   border-radius: 100vh;
   aspect-ratio: 1 / 1;
   width: 100px;
+  height: 100px;
   box-shadow: 2px 4px 10px -5px rgb(0 0 0 / .5)
 }
 
