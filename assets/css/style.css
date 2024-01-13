@@ -324,13 +324,14 @@ nav {
   width: min(80%, 30ch);
 }
 
+/* jshooks for heroImg */
 .not-loaded {
   opacity: 0;
 }
 
 .loaded {
   opacity: 1;
-  transition: 150ms ease-in-out;
+  transition: 1000ms ease-in-out;
 }
 
 
