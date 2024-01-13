@@ -241,8 +241,8 @@ nav {
     top: 0;
     transform: translateX(100%);
     margin-block-start: 82px;
-    transition: transform 300ms 200ms ease-in,
-                visibility 300ms 200ms ease-in;
+    transition: transform 300ms 200ms ease-out,
+                visibility 300ms 250ms ease-out;
     border-bottom-left-radius: 10px;
     visibility: hidden;
   }
@@ -262,6 +262,7 @@ nav {
   .openNav {
     visibility: initial;
     transform: translateX(0);
+    transition: transform 300ms 200ms ease-in;
   }
 
   /* For hamburger menu, within the media query use the width: min(nearly 100% for mobile, default size for menu when not mobile. It will use the second value when it is big enough and swap to 100% of the screen when mobile, whichever is smaller!) */
