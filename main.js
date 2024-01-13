@@ -59,7 +59,6 @@ function initEmbla() {
 //Hiding hero until it is fully loaded;
 function hideUntilLoaded() {
   const heroImg = document.querySelector('.hero_image');
-  console.log(heroImg)
   function loaded() {
     heroImg.classList.add('loaded')
   }
