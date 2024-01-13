@@ -37,7 +37,7 @@ body {
   margin: 0;
   padding: 0;
   background: var(--bg);
-  font-family: 'Playfair Display', Arial, sans-serif;
+  font-family: 'Playfair Display', 'Times', sans-serif;
   box-sizing: border-box;
 }
 /* 
