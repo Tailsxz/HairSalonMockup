@@ -78,6 +78,7 @@ function applyNavAnimations() {
       hamburgerButton.setAttribute('data-state', 'closed');
       hamburgerButton.setAttribute('aria-expanded', 'false');
     }
+
   navBar.classList.toggle('openNav', hamburgerButton.getAttribute('aria-expanded') === 'true');
   });
 };

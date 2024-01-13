@@ -36,3 +36,4 @@ First time creating my own SVG for a hamburger icon, played around with strokes 
 Learned that an on keypress event is not needed as when an element is focused and space or enter is press, this will fire the click event for that element.
 Learned how to use srcset and sizes to serve responsive images. 
 Learned how to preload fonts to avoid FOUT(Flash of Unstyled Text)
+Learned that you can transition VISIBILITY!!!
