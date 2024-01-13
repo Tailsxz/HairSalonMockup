@@ -34,6 +34,11 @@ Used embla to create a testimonial carousel, along with media queries for a resp
 First usage of data-attributes to define a state for the navigation bar and hamburger menu.
 First time creating my own SVG for a hamburger icon, played around with strokes and dasharrays/offsets.
 Learned that an on keypress event is not needed as when an element is focused and space or enter is press, this will fire the click event for that element.
+Learned how to convert images to webp using the TERMINAL!!!
 Learned how to use srcset and sizes to serve responsive images. 
 Learned how to preload fonts to avoid FOUT(Flash of Unstyled Text)
 Learned that you can transition VISIBILITY!!!
+First usage of the load event on an image to hide images until they have been fully loaded to prevent the progressive loading of images.
+Learned that width/height attributes are mainly for the browser to get the intrinsic aspect ratio of images, used to prevent CLS.
+
+Honestly in building this one project, I have learned so much. I am so proud of how it turned out and that I built it from scratch :D. This has motivated me to build more and more projects in the future.
