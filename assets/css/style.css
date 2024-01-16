@@ -27,6 +27,7 @@
   --fs-xlarge: 2.986rem;
 }
 
+/* Scaling down the font-sizes at mobile screen sizes. */
 @media screen and (max-width: 450px) {
   :root {
     --fs-medium: 1.2rem;
