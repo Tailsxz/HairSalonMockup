@@ -111,7 +111,7 @@ header {
 }
 
 header img {
-  width: 150px;
+  width: 250px;
 }
 
 nav {
@@ -240,7 +240,7 @@ nav {
     right: 0;
     top: 0;
     transform: translateX(100%);
-    margin-block-start: 82px;
+    margin-block-start: 92px;
     transition: transform 300ms 200ms ease-out,
                 visibility 300ms 250ms ease-out;
     border-bottom-left-radius: 10px;
@@ -571,8 +571,12 @@ caption {
   padding-block: 8rem;
 }
 
+.lookbook h2 {
+  width: 100%;
+}
+
 .lookbook .container {
-  width: min(100% - 13rem, 1200px);
+  width: min(100% - 8rem, 1200px);
 }
 
 .lookbook-grid {
