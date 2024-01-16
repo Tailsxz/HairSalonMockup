@@ -9,6 +9,7 @@
   <link rel="preload" href="/assets/fonts/PlayfairDisplay-Regular.woff2" as="font" fetchpriority="high" type="font/woff2" crossorigin>
   <link rel="preload" href="/assets/fonts/PlayfairDisplay-Bold.woff2" as="font" fetchpriority="high" type="font/woff2" crossorigin>
   <link rel="preload" fetchpriority="high" as="image" href="assets/src/mainBg.webp" type="image/jpg">
+  <link rel="preload" fetchpriority="high" as="image" href="assets/src/vector/default-monochrome.svg" type="image/jpg">
   <link rel="stylesheet" href="assets/css/normalize.css">
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
@@ -36,14 +37,16 @@
         </svg>
       </button>
       <nav class="navigation" id="navigationBar" role="navigation" aria-label="main" >
-      <img src="assets/src/vector/default-monochrome.svg"  alt="irradiant digits logo">
-      <ul class="navBar">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#lookbook">Lookbook</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
+        <div class="logo-wrapper">
+          <img src="assets/src/vector/default-monochrome.svg" width="250" height="16" alt="irradiant digits logo">
+        </div>
+        <ul class="navBar">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#lookbook">Lookbook</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
       </nav>
     </div>
   </header>

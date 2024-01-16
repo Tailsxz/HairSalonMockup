@@ -127,13 +127,17 @@ header img {
   width: 250px;
 }
 
+.logo-wrapper {
+  width: 250px;
+  height: 16px;
+}
+
 nav {
   display: flex;
   justify-content: space-between;
   /* border: 2px solid black; */
   padding: 1.5rem;
 }
-
 
 .navBar {
   display: flex;
@@ -447,7 +451,7 @@ nav {
 }
 
 @media screen and (max-width: 750px) {
-  .features .container{
+  .features .container {
     flex-direction: column;
     align-items: center;
   }
