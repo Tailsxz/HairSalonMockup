@@ -240,7 +240,7 @@ nav {
     right: 0;
     top: 0;
     transform: translateX(100%);
-    margin-block-start: 92px;
+    margin-block-start: 64px;
     transition: transform 300ms 200ms ease-out,
                 visibility 300ms 250ms ease-out;
     border-bottom-left-radius: 10px;
@@ -278,6 +278,20 @@ nav {
     align-items: center;
     padding: 2rem 0;
     width: 100%;
+  }
+}
+
+@media screen and (max-width: 369px) {
+  header img {
+    width: 200px;
+  }
+
+  .hamburger {
+    scale: .6;
+  }
+
+  .navBar {
+    margin-block-start: 61px;
   }
 }
 
