@@ -20,7 +20,7 @@ To get a copy of this project, you can fork the repo then clone it as your own.
 [Clone the Repo](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository)
 
 ### Optimizations
-All image optimizations done. Planning to implement booking in some form in the future. Need to copywrite and replace lorem, as well as think of a new name. Also, theres a bit of cls on slower connections, due to the font having to be downloaded. Might set up an event listener and fade in the text once the font is loaded.
+All image optimizations done. Planning to implement booking in some form in the future. Need to copywrite and replace lorem, as well as think of a new name. Also, theres a bit of cls on slower connections, due to the font having to be downloaded. Might set up an event listener(FontFaceSet) and fade in the text once the font is loaded.
 
 ### Knowledge gained from this project
 Learned how to draw inspiration from other designs. Also learned what the structure of an HTML document should look like for a standard business website. 
