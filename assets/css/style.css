@@ -238,7 +238,7 @@ nav {
   100% { stroke-dashoffset: 0;}
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 850px) {
   header {
     isolation: isolate;
   }
