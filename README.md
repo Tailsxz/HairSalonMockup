@@ -20,7 +20,7 @@ To get a copy of this project, you can fork the repo then clone it as your own.
 [Clone the Repo](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository)
 
 ### Optimizations
-All image optimizations done. Planning to implement booking in some form in the future. Need to copywrite and replace lorem, as well as think of a new name. Also, theres a bit of cls on slower connections, due to the font having to be downloaded. Might set up an event listener(FontFaceSet) and fade in the text once the font is loaded.
+All image optimizations done. Planning to implement booking in some form in the future. Need to copywrite and replace lorem, as well as think of a new name. 
 
 ### Knowledge gained from this project
 Learned how to draw inspiration from other designs. Also learned what the structure of an HTML document should look like for a standard business website. 
@@ -40,5 +40,6 @@ Learned how to preload fonts to avoid FOUT(Flash of Unstyled Text)
 Learned that you can transition VISIBILITY!!!
 First usage of the load event on an image to hide images until they have been fully loaded to prevent the progressive loading of images.
 Learned that width/height attributes are mainly for the browser to get the intrinsic aspect ratio of images, used to prevent CLS.
+Learned alot more about the font display property and what the difference is between the values.
 
 Honestly in building this one project, I have learned so much. I am so proud of how it turned out and that I built it from scratch :D. This has motivated me to build more and more projects in the future.
