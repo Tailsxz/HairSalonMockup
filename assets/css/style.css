@@ -1,10 +1,12 @@
 /* Font Faces */
 @font-face {
+  font-display: optional;
   font-family: 'Playfair Display';
   src: url(/assets/fonts/PlayfairDisplay-Regular.woff2);
 }
 
 @font-face {
+  font-display: optional;
   font-family: 'Playfair Display';
   font-weight: 700;
   src: url(/assets/fonts/PlayfairDisplay-Bold.woff2);
