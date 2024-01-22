@@ -42,4 +42,4 @@ First usage of the load event on an image to hide images until they have been fu
 Learned that width/height attributes are mainly for the browser to get the intrinsic aspect ratio of images, used to prevent CLS.
 Learned alot more about the font display property and what the difference is between the values.
 
-Honestly in building this one project, I have learned so much. I am so proud of how it turned out and that I built it from scratch :D. This has motivated me to build more and more projects in the future.
+Honestly in building this one project, I have learned so much. I am so proud of how it turned out and that I built it from scratch :D. This has motivated me to build more and more projects in the future. Got my first perfect lighthouse score!!Lets go!!
