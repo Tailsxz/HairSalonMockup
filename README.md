@@ -21,6 +21,7 @@ To get a copy of this project, you can fork the repo then clone it as your own.
 
 ### Optimizations
 All image optimizations done. Planning to implement booking in some form in the future. Need to copywrite and replace lorem, as well as think of a new name. 
+Another optimization would be keyboard accessibility for the testimonials carousel as well as the gallery images.
 
 ### Knowledge gained from this project
 Learned how to draw inspiration from other designs. Also learned what the structure of an HTML document should look like for a standard business website. 
