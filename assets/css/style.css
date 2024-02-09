@@ -193,6 +193,7 @@ nav {
   margin-inline: 1rem;
   right: 0;
   top: 17%;
+  cursor: pointer;
   color: transparent;
   background: transparent;
   border: 0;
