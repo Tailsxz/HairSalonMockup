@@ -1,5 +1,4 @@
-# Project Title
-Sleek Nails
+# Irradiant Nails Mockup
 
 [Live Site](https://takingcareofme.netlify.app) Demo Link
 
