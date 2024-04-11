@@ -170,13 +170,14 @@ nav {
   background: currentColor;
   transform: scaleX(0);
   transform-origin: right;
-  transition: transform 225ms ease-in;
+  transition: transform 225ms ease-in 100ms;
 }
 
 .navBar a:hover::after,
 .navBar a:focus-visible::after {
   transform: scaleX(1);
-  transform-origin: left; 
+  transform-origin: left;
+  transition: transform 225ms ease-in;
 }
 
 .active {

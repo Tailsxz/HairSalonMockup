@@ -49,7 +49,7 @@ function setUpObserver() {
   sectionsWithId.forEach(section => observer.observe(section));
 }
 
-//Function to initialize and set up the EmblaCarousel
+//Embla config
 function initEmbla() {
   const emblaNode = document.querySelector('.embla');
   const options = { loop: true, containScroll: false, align: 'center', startIndex: 1 };
@@ -75,14 +75,20 @@ function hideUntilLoaded() {
 function applyNavAnimations() {
   const hamburgerButton = document.querySelector('.hamburger_nav');
   const navBar = document.querySelector('.navBar');
+  const navElement = document.querySelector('.navigation');
   
   hamburgerButton.addEventListener('click', () => {
+    //Closure baby! Didn't even notice we were utilizing closure here. Even after applyNavAnimations returned, our listener handler still has access to the DOM nodes we queried. :D
+
+    //#TODO, upon opening the nav menu we should lock our focus within it and close the menu upon a user navigating!
     const currentState = hamburgerButton.getAttribute('data-state');
     
     if (!currentState || currentState === 'closed') {
+      navElement.inert = false;
       hamburgerButton.setAttribute('data-state', 'opened');
       hamburgerButton.setAttribute('aria-expanded', 'true');
     } else {
+      navElement.inert = true;
       hamburgerButton.setAttribute('data-state', 'closed');
       hamburgerButton.setAttribute('aria-expanded', 'false');
     }
@@ -99,3 +105,5 @@ document.addEventListener('DOMContentLoaded', () => {
   setUpObserver();
   initEmbla();
 })
+
+//Side note, when implementing actual form email service, limit the number of characters for all inputs!!
