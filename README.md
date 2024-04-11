@@ -1,7 +1,6 @@
-# Project Title
-Sleek Nails
+# Irradiant Nails Mockup
 
-[Live Site](https://takingcareofme.netlify.app) Demo Link
+[Live DEMO](https://takingcareofme.netlify.app)
 
 Nail Salon website acting as a demo for potential clients.
 
